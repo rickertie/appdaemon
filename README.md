@@ -1,3 +1,10 @@
+FORK: To add:
+
+# Manually install the dependencies
+RUN apk add py3-pillow
+RUN pip3 install Pillow
+
+
 # Description
 
 AppDaemon is a loosely coupled, multi-threaded, sandboxed python
