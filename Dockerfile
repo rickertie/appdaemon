@@ -22,13 +22,13 @@ COPY . .
 RUN apk add tzdata
 
 # Install dependencies
-RUN apk add --no-cache gcc libffi-dev openssl-dev musl-dev \
+RUN apk add --no-cache gcc libffi-dev openssl-dev musl-dev py3-pillow \
     && pip install --no-cache-dir .
 # Install additional packages
 RUN apk add --no-cache curl
 # Manually install the dependencies
-RUN apk add py3-pillow
-RUN pip3 install Pillow
+#RUN apk add py3-pillow
+#RUN pip3 install Pillow
 
 # Start script
 RUN chmod +x /usr/src/app/dockerStart.sh
