@@ -1,6 +1,5 @@
-FORK: To add:
+FORK: To add dependencies:
 
-# Manually install the dependencies
 RUN apk add py3-pillow
 RUN pip3 install Pillow
 
